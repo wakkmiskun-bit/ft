@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M. Ilham - CV / Resume</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background: #E2E8F0;
+            font-family: 'Inter', sans-serif;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .cv-container {
+            max-width: 1000px;
+            width: 100%;
+            background: #FFFFFF;
+            border-radius: 32px;
+            box-shadow: 0 25px 50px -12px rgba(0,0,0,0.25);
+            overflow: hidden;
+            transition: all 0.2s;
+        }
+        /* Header */
+        .cv-header {
+            background: linear-gradient(135deg, #0F172A 0%, #1E293B 100%);
+            padding: 40px;
+            color: white;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            align-items: center;
+        }
+        .avatar {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #6366F1;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+        .header-info {
+            flex: 1;
+        }
+        .header-info h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 8px;
+            background: linear-gradient(135deg, #FFFFFF, #A5B4FC);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        .header-info .title {
+            font-size: 1.2rem;
+            color: #CBD5E1;
+            margin-bottom: 16px;
+            font-weight: 500;
+        }
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            font-size: 0.85rem;
+            color: #CBD5E1;
+        }
+        .contact-info i {
+            width: 20px;
+            color: #6366F1;
+            margin-right: 8px;
+        }
+        .contact-info span {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+        /* Body */
+        .cv-body {
+            padding: 40px;
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 40px;
+        }
+        .left-column, .right-column {
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+        }
+        .section-title {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #0F172A;
+            margin-bottom: 20px;
+            border-left: 4px solid #6366F1;
+            padding-left: 12px;
+        }
+        .skill-item {
+            margin-bottom: 16px;
+        }
+        .skill-name {
+            font-weight: 600;
+            margin-bottom: 6px;
+            color: #1E293B;
+        }
+        .skill-bar {
+            height: 6px;
+            background: #E2E8F0;
+            border-radius: 3px;
+            overflow: hidden;
+        }
+        .skill-level {
+            height: 100%;
+            background: linear-gradient(90deg, #6366F1, #8B5CF6);
+            border-radius: 3px;
+            width: 0%;
+        }
+        .exp-item, .edu-item {
+            margin-bottom: 24px;
+        }
+        .exp-title, .edu-title {
+            font-weight: 700;
+            color: #0F172A;
+            margin-bottom: 4px;
+        }
+        .exp-company, .edu-date {
+            font-size: 0.8rem;
+            color: #6366F1;
+            margin-bottom: 6px;
+            font-weight: 500;
+        }
+        .exp-desc {
+            font-size: 0.85rem;
+            color: #475569;
+            line-height: 1.5;
+        }
+        hr {
+            margin: 16px 0;
+            border: 0;
+            height: 1px;
+            background: #E2E8F0;
+        }
+        .tools {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        .tool-badge {
+            background: #F1F5F9;
+            padding: 5px 12px;
+            border-radius: 30px;
+            font-size: 0.7rem;
+            font-weight: 500;
+            color: #1E293B;
+        }
+        @media (max-width: 700px) {
+            .cv-body {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+            .cv-header {
+                flex-direction: column;
+                text-align: center;
+            }
+            .contact-info {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="cv-container">
+    <div class="cv-header">
+        <img class="avatar" src="foto dang.jpg.jpg" alt="Foto Profil">
+        <div class="header-info">
+            <h1>M. ILHAM H.B</h1>
+            <div class="title">Creative Designer & Web Developer</div>
+            <div class="contact-info">
+                <span><i class="fas fa-envelope"></i> milhamhabi@gmail.com</span>
+                <span><i class="fas fa-phone-alt"></i> +62 851 9116 3819</span>
+                <span><i class="fas fa-map-marker-alt"></i> Bwngkulu, Indonesia</span>
+                <span><i class="fab fa-linkedin"></i> https://www.linkedin.com/in/muhammad-ilham-04b508384/</span>
+                <span><i class="fab fa-github"></i> https://github.com/wakkmiskun-bit</span>
+            </div>
+        </div>
+    </div>
+    <div class="cv-body">
+        <!-- Kiri: Skill & Tools -->
+        <div class="left-column">
+            <div>
+                <div class="section-title">Keahlian Utama</div>
+                <div class="skill-item"><div class="skill-name">UI/UX Design</div><div class="skill-bar"><div class="skill-level" style="width: 90%;"></div></div></div>
+                <div class="skill-item"><div class="skill-name">Web Development (React, Vue)</div><div class="skill-bar"><div class="skill-level" style="width: 88%;"></div></div></div>
+                <div class="skill-item"><div class="skill-name">Node.js / Express</div><div class="skill-bar"><div class="skill-level" style="width: 85%;"></div></div></div>
+                <div class="skill-item"><div class="skill-name">GSAP / Framer Motion</div><div class="skill-bar"><div class="skill-level" style="width: 90%;"></div></div></div>
+                <div class="skill-item"><div class="skill-name">Figma / Adobe XD</div><div class="skill-bar"><div class="skill-level" style="width: 92%;"></div></div></div>
+            </div>
+            <div>
+                <div class="section-title">Tools & Technologies</div>
+                <div class="tools">
+                    <span class="tool-badge">Figma</span>
+                    <span class="tool-badge">VS Code</span>
+                    <span class="tool-badge">Git/GitHub</span>
+                    <span class="tool-badge">Tailwind CSS</span>
+                    <span class="tool-badge">GSAP</span>
+                    <span class="tool-badge">Three.js</span>
+                    <span class="tool-badge">MongoDB</span>
+                    <span class="tool-badge">Postman</span>
+                </div>
+            </div>
+            <div>
+                <div class="section-title">Bahasa</div>
+                <div class="skill-item"><div class="skill-name">Indonesia (Native)</div><div class="skill-bar"><div class="skill-level" style="width: 100%;"></div></div></div>
+                <div class="skill-item"><div class="skill-name">English (Professional)</div><div class="skill-bar"><div class="skill-level" style="width: 85%;"></div></div></div>
+            </div>
+        </div>
+        <!-- Kanan: Pengalaman & Pendidikan -->
+        <div class="right-column">
+            <div>
+                <div class="section-title">Pengalaman Kerja</div>
+                <div class="exp-item">
+                    <div class="exp-title">Freelance Web Developer</div>
+                    <div class="exp-company">Self-employed · 2026 – Sekarang</div>
+                    <div class="exp-desc">Membangun website modern, portfolio, dan landing page untuk berbagai klien.</div>
+                </div>
+                <div class="exp-item">
+                    <div class="exp-title">UI/UX Designer</div>
+                    <div class="exp-company">Startup Digital · 2025 – 2026</div>
+                    <div class="exp-desc">Merancang antarmuka aplikasi mobile dan web, melakukan user research, prototyping high-fidelity, dan kolaborasi dengan tim frontend.</div>
+                </div>
+                
+            </div>
+            <div>
+                <div class="section-title">Pendidikan</div>
+                <div class="edu-item">
+                    <div class="edu-title">D4 Teknik Informatika</div>
+                    <div class="edu-date">Universitas Logistik bisnis internasional· 2025 </div>
+                    <div class="exp-desc">IPK 3.85/4.00. Fokus pada Web Development, dan Desain Interaksi.</div>
+                </div>
+            </div>
+            <div>
+                
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div style="padding: 0 40px 40px 40px; text-align: center; font-size: 0.7rem; color: #94A3B8;">
+        <i class="fas fa-code"></i> Built with modern web technologies | Portfolio: wakkmiskun-bit.github.io/M.ilham.H
+    </div>
+</div>
+<!-- Font Awesome (untuk ikon) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+</body>
+</html>
